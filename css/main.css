@@ -11,8 +11,9 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 /* pagina principal */
-.featuredServices__title, .brands__tittle{
+.featuredServices__title, .brands__tittle, h1, h2, h3{
     text-align: center;
+    margin-top: 40px;
 }
 /* menu de escritorio */
 .btn-outline-success {
@@ -47,6 +48,11 @@ p {
     width: 100%;
     margin: 10px 0;
 }
+/* pagina de servicios */
+.card-body {
+    background-color: #373737;
+    border-radius: 0 10px 10px 0px;
+  }
 .servicesContainer, .brands{
     margin-top: 30px;
 }
@@ -56,6 +62,32 @@ p {
     padding: 50px 0;
     background-color: #000 !important;
 }
+/* Diseno de aside */
+.contenedorServices{
+    background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
+    background-size: cover;
+}
+.images__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images__aside img {
+    width: 50%;
+    margin: 20px;
+}
+.btn-primary {
+    --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-bg: #befe37;
+    --bs-btn-border-color: #befe37;
+    --bs-btn-hover-color: rgb(0, 0, 0);
+    --bs-btn-hover-bg: #befe37;
+    --bs-btn-hover-border-color: #befe37;
+    --bs-btn-active-bg: #befe37;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-disabled-bg: #befe37;
+    --bs-btn-disabled-border-color: #befe37;
+  }
 
 @media (min-width: 576px) {
 /* logo escritorio */
@@ -77,5 +109,9 @@ p {
 }
 .bannerOne{
     display: none;
+}
+/* pagina de servicios */
+.mainServices{
+    margin-left: 40px;
 }
 }
