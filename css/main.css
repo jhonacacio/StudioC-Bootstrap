@@ -33,6 +33,7 @@ p {
 }
   .navbar-dark {
     --bs-navbar-hover-color: #befe37;
+    background-color: #000 !important;
   }
 /* banner para version escritorio */
 .bannerTwo{
@@ -40,16 +41,20 @@ p {
 }
 /* sub banners */
 .subBanner{
-    padding: 30px 0 !important;
+    padding: 30px 0;
 }
 .subBanner img{
     width: 100%;
     margin: 10px 0;
 }
-
+.servicesContainer, .brands{
+    margin-top: 50px;
+}
 /* seccion de footer */
 .footerContent{
     text-align: center;
+    padding: 50px 0;
+    background-color: #000 !important;
 }
 
 @media (min-width: 576px) {
