@@ -118,6 +118,10 @@ p {
     background-size: cover;
     padding: 50px 10px;
 }
+.btn-contact{
+    margin: 20px auto;
+    width: 80%;
+}
 @media (min-width: 576px) {
 /* logo escritorio */
 .headerOne__logo, .imagenGray{
