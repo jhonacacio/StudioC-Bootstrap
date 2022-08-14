@@ -9,44 +9,66 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Studio C</title>
 </head>
-<body id="container-fluid bg-dark text-white">
-
+<body id="container-fluid bg-dark text-white contenedorIndex">
     <!-- logo y navegacion -->
         <header class="row">
-                <!-- menu de navegacion -->
-                <nav class="navbar-expand-lg navbar navbar-dark bg-dark col-sm-12 col-md-12 col-lg-12">
-                    <div class="container">
-                        <a href="./index.html"><img class="headerOne__logo" src="./images/logo-studio-c.png" alt="logo" width="150px"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./pages/conocenos.html">Conocenos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                      </div>
+            <!-- menu de navegacion -->
+            <nav class="navbar-expand-lg navbar navbar-dark bg-dark col-sm-12 col-md-12 col-lg-12">
+                <div class="container">
+                    <a href="./index.html"><img class="headerOne__logo" src="./images/logo-studio-c.png" alt="logo" width="150px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/conocenos.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                     </div>
-                  </nav>
-                    <!-- banner principal -->
-            <div id="carouselExampleIndicators" class="col-sm-12 col-md-12 col-lg-12 carousel slide" data-bs-ride="true">
+                </div>
+            </nav>
+            <!-- banner mobile -->
+            <div class="col-sm-12 col-md-12 col-lg-12 carousel slide bannerOne" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/bannerOne-mobile.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/bannermobileTwo.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- banner principal -->
+            <div class="col-sm-12 col-md-12 col-lg-12 carousel slide bannerTwo" data-bs-ride="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -72,74 +94,99 @@
         <main class="bg-dark text-white">
             <!-- sub banners -->
             <div class="container">
-            <section class="row subBanner position-relative">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img src="./images/subBanner1.png" class="rounded" alt="...">
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img src="./images/subBanner2.png" class="rounded" alt="...">
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img src="./images/subBanner3.png" class="rounded" alt="...">
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img src="./images/subBanner4.png" class="rounded" alt="...">
-                </div>
-            </section>
-        </div>
-            <!-- seccion de servicios destacados -->
-            <section class="featuredServices">
-                <h2 class="featuredServices__title">Servicios destacados</h2>
-                <div class="featuredServices__content">
-                    <img class="featuredServices__images" src="./images/1.jpg" alt="">
-                    <img class="featuredServices__images" src="./images/2.jpg" alt="">
-                    <img class="featuredServices__images" src="./images/3.jpg" alt="">
-                    <img class="featuredServices__images" src="./images/4.jpg" alt="">
-                    <img class="featuredServices__images" src="./images/5.jpg" alt="">
-                    <img class="featuredServices__images" src="./images/6.jpg" alt="">
-                </div>
-            <!-- Marcas con las que trabajamos -->
-            </section class="brands"> 
-                <h2 class="brands__tittle">Algunas marcas con las que trabajamos</h2>
-                <div class="brands__logo">
-                    <img src="./images/logo-bose.png" alt="logo-bosse">
-                    <img src="./images/logo-ldsystems.png" alt="logo-ldsystem">
-                    <img src="./images/logo-mackie.png" alt="logo-mackie">
-                    <img src="./images/logo-roland.png" alt="logo-roland">
-                    <img src="./images/logo-shure.png" alt="logo-shure">
-                    <img src="./images/logo-yamaha.png" alt="logo-yamaha">
-                </div>
-        </main>
-        <footer class="footer__content">
-            <div>
-                <h4>Información de contacto</h4>
-                <br>
-                <p>Direccion: Calle Test. Chile</p>
-                <p>Telf: +534343536</p>
-                <p>Correo: asaf@gmail.com</p>
+                <section class="row subBanner">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <img src="./images/subBanner1.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <img src="./images/subBanner2.png" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-6 col-lg-3">
+                        <img src="./images/subBanner3.png" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-6 col-lg-3">
+                        <img src="./images/subBanner4.png" class="rounded" alt="...">
+                    </div>
+                </section>
             </div>
-            <div>
+            <!-- seccion de servicios destacados -->
+            <div class="container">
+                <h2 class="featuredServices__title">Servicios destacados</h2>
+                <section class="row subBanner">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/1.jpg" class="rounded" alt="...">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/2.jpg" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/3.jpg" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/4.jpg" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/5.jpg" class="rounded" alt="...">
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./images/6.jpg" class="rounded" alt="...">
+                    </div>
+                </section>
+            <!-- Marcas con las que trabajamos -->
+            <div class="container brands"> 
+                <h2 class="brands__tittle">Algunas marcas con las que trabajamos</h2>
+                <section class="row subBanner">
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="./images/logo-bose.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="./images/logo-ldsystems.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="/images/logo-mackie.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="./images/logo-roland.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="./images/logo-shure.png" class="rounded" alt="...">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <img src="./images/logo-yamaha.png" class="rounded" alt="...">
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="container-fluid bg-dark text-white footerContent">
+            <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>Información de contacto</h4>
+                    <br>
+                    <p>Direccion: Calle Test. Chile</p>
+                    <p>Telf: +534343536</p>
+                    <p>Correo: asaf@gmail.com</p>
+                </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                 <h4>Redes sociales</h4>
                 <br>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-facebook-square"></i>
             </div>
-            <div>
-                <h4>Categorias principales</h4>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <h4>Información adicional</h4>
                 <br>
-                <ul class="footer__content--links">
-                    <li><a href="#">Cajas Activas</a></li>
-                    <li><a href="#">Pianos y teclados</a></li>
-                    <li><a href="#">Microfonos</a></li>
-                    <li><a href="#">Mixer</a></li>
-                </ul>
+                <p>Instalacion</p>
+                <p>Asesoria</p>
+                <p>Proyectos</p>
             </div>
-            <div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                 <h4>Tiendas</h4>
                 <br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.12844982202!2d-70.62678941719712!3d-33.42934304789535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6ff096d887%3A0xc45df2bb50212e4e!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1658613779884!5m2!1ses-419!2scl" 
                 width="250" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             </div>
         </footer>
         <!-- JavaScript Bundle with Popper -->
