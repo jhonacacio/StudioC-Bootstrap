@@ -48,7 +48,7 @@ p {
     margin: 10px 0;
 }
 .servicesContainer, .brands{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* seccion de footer */
 .footerContent{
@@ -58,6 +58,19 @@ p {
 }
 
 @media (min-width: 576px) {
+/* logo escritorio */
+.headerOne__logo, .imagenGray{
+    filter: grayscale(0);
+    transition: 200ms;
+}
+/* logo y subbanner animaciones */
+.headerOne__logo:hover{
+    filter: grayscale(100%);
+}
+.imagenGray:hover {
+    width: 98%;
+    filter: grayscale(100%);
+}
 /* banner para version escritorio */
 .bannerTwo{
     display: block;
