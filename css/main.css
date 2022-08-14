@@ -87,6 +87,7 @@ p {
     --bs-btn-active-border-color: #0a53be;
     --bs-btn-disabled-bg: #befe37;
     --bs-btn-disabled-border-color: #befe37;
+    margin-bottom: 40px;
   }
 /* Pagina de proyectos */
 .projectsCard{
