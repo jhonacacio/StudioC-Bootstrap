@@ -27,6 +27,10 @@ p {
     --bs-btn-disabled-color: #befe37;
     --bs-btn-disabled-border-color: #befe37;
   }
+  /* menu de navegacion mobile */
+.navbar-expand-lg{
+    padding: 10px 20px;
+}
   .navbar-dark {
     --bs-navbar-hover-color: #befe37;
   }
@@ -42,9 +46,7 @@ p {
     width: 100%;
     margin: 10px 0;
 }
-.navbar-expand-lg{
-    padding: 10px 20px;
-}
+
 /* seccion de footer */
 .footerContent{
     text-align: center;
