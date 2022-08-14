@@ -106,11 +106,17 @@ p {
     margin-bottom: 40px;
 }
 /* diseno pagina de contacto */
-.containerContact{
+.containerPersons{
     padding: 40px;
 }
 .contactContainer{
     width: 100%;
+}
+/* diseno pagina de contacto */
+.containerContact{
+    background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
+    background-size: cover;
+    padding: 50px 10px;
 }
 @media (min-width: 576px) {
 /* logo escritorio */
@@ -138,7 +144,22 @@ p {
     margin-left: 40px;
 }
 /* diseno pagina de contacto */
-.containerContact{
+.containerPersons{
     padding: 100px;
 }
+    .containerContact{
+        padding:  100px 100px;
+    }
+}
+/* diseno pagina de contacto */
+
+@media (min-width: 768px) {
+    .containerContact{
+        padding:  100px 200px;
+    }
+}
+@media (min-width: 992px) {
+    .containerContact{
+        padding:  100px 400px;
+    }
 }
