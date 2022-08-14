@@ -105,6 +105,13 @@ p {
 .btn-group{
     margin-bottom: 40px;
 }
+/* diseno pagina de contacto */
+.containerContact{
+    padding: 40px;
+}
+.contactContainer{
+    width: 100%;
+}
 @media (min-width: 576px) {
 /* logo escritorio */
 .headerOne__logo, .imagenGray{
@@ -129,5 +136,9 @@ p {
 /* pagina de servicios */
 .mainServices{
     margin-left: 40px;
+}
+/* diseno pagina de contacto */
+.containerContact{
+    padding: 100px;
 }
 }
