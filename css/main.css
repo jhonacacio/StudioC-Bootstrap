@@ -101,6 +101,9 @@ p {
     color: #000;
     background-color: #befe37;
   }
+.btn-group{
+    margin-bottom: 40px;
+}
 @media (min-width: 576px) {
 /* logo escritorio */
 .headerOne__logo, .imagenGray{
