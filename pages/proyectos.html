@@ -4,145 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <title>Studio C</title>
 </head>
-<body class="wrapperProjects">
-    <header class="projects__header">
-        <div class="headerOne">
-            <!-- logo -->
-            <a href="../index.html"><img class="headerOne__logo" src="../images/logo-studio-c.png" alt="logo"></a>
-            <!-- menu de navegacion -->
-            <input class="side-menu" type="checkbox" id="side-menu"/>
-            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./conocenos.html">Conocenos</a></li>
-                    <li><a href="./contacto.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-            <nav class="headerOne__nav">
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./conocenos.html">Conocenos</a></li>
-                    <li><a href="./contacto.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-
-        </div>
+    <body id="container bg-dark text-white ">
+        <!-- logo y navegacion -->
+            <header>
+                <!-- menu de navegacion mobile -->
+                <nav class="navbar-expand-lg navbar navbar-dark bg-dark col-sm-12 col-md-12 col-lg-12">
+                    <div class="container">
+                        <a href="../index.html"><img class="headerOne__logo" src="../images/logo-studio-c.png" alt="logo" width="150px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                        </div>
+                    </div>
+                </nav>
     </header>
-    <main class="projects__container">
+    <div class="container-fluid contenedorServices">
+    <div class="row">
+    <main class="col-12 col-sm-8 col-md-8 col-lg-8 bg-dark text-white">
         <!-- servicios destacados -->
-        <section class="projects">
-            <h1> Proyectos realizados </h1>
-            <p class="projects__shortDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolorum cupiditate earum distinctio error in, perferendis, exercitationem totam molestiae consequatur reprehenderit ipsa natus, illum qui aliquid? Velit ipsa animi aliquam!</p>
-            <div class="projects__div">
-                <div class="projects__post">
-                    <div class="projects__gallery">
-                        <iframe width="378" height="259" src="https://www.youtube.com/embed/ABQnIu2lje0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="projects__descriptionPost">
-                            <h2>Proyecto Los Vilos, Escenografía e Iluminación</h2>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur reprehenderit reiciendis sed numquam! Provident ipsum tenetur atque amet, odit quaerat quidem, praesentium aliquid itaque ut facilis ipsam accusantium saepe?
-                            </p>
-                        </div>
-                    </div>   
+        <section class="mainServices">
+            <h1>Proyectos realizados </h1>
+            <!-- inicio de diseno de tarjeta -->
+            <div class="card mb-3 bg-dark text-white" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../images/project-2.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8 projectsCard">
+                    <div class="card-body">
+                      <h5 class="card-title">Proyecto Los Vilos</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="projects__post">
-                    <div class="projects__gallery">
-                        <img src="../images/project-3.png" alt="project">
-                        <div class="projects__descriptionPost">
-                            <h2>Audio Distribuido - Registro Civil</h2>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur reprehenderit reiciendis sed numquam! Provident ipsum tenetur atque amet, odit quaerat quidem, praesentium aliquid itaque ut facilis ipsam accusantium saepe?
-                            </p>
-                        </div>
-                    </div>   
+              </div>
+            <!-- inicio de diseno de tarjeta -->
+              <div class="card mb-3 bg-dark text-white" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../images/project-3.png" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="projects__post">
-                    <div class="projects__gallery">
-                        <img src="../images/project-6.png" alt="project">
-                        <div class="projects__descriptionPost">
-                            <h2>Instalación de sala de estudio profesional</h2>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur reprehenderit reiciendis sed numquam! Provident ipsum tenetur atque amet, odit quaerat quidem, praesentium aliquid itaque ut facilis ipsam accusantium saepe?
-                            </p>
-                        </div>
-                    </div>   
+                <div class="col-md-8 projectsCard">
+                  <div class="card-body">
+                    <h5 class="card-title">Muni. Puente Alto</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="projects__post">
-                    <div class="projects__gallery">
-                        <img src="../images/project-5.png" alt="project">
-                        <div class="projects__descriptionPost">
-                            <h2>Sala de prensa en Viña del Mar</h2>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur reprehenderit reiciendis sed numquam! Provident ipsum tenetur atque amet, odit quaerat quidem, praesentium aliquid itaque ut facilis ipsam accusantium saepe?
-                            </p>
-                        </div>
-                    </div>   
+              </div>
+             <!-- inicio de diseno de tarjeta -->
+              <div class="card mb-3 bg-dark text-white" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../images/project-4.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8 projectsCard">
+                    <div class="card-body">
+                      <h5 class="card-title">Santa Cruz</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary active" aria-current="page">Escenarios</a>
+                <a href="#" class="btn btn-primary">Audio profesional</a>
+                <a href="#" class="btn btn-primary">Iluminacion</a>
+              </div>
         </section>
-        <!-- lista lateral de servicios --> 
+       
     </main>
-    <aside class="projectsAside">
-        <h2 class="projectsAside__title">Lista de Proyectos</h2>
+      <!-- lista lateral de servicios -->
+      <aside class="col-12 col-sm-4 col-md-4 col-lg-4 aside text-white">
+        <h2 class="servicesAside__title">Lista de servicios</h2>
         <br>
-        <ul class="projectsAside__list">
-            <li><a href="">Proyecto los Vilos, Escenario</a></li>
-            <li><a href="">Sistema inalambrico, Araucania</a></li>
-            <li><a href="">Audio distribuido, Lo Barnechea</a></li>
-            <li><a href="">Instalacion educativa, Ovalle</a></li>
-            <li><a href="">Aduio distribuido, Temuco</a></li>
-            <li><a href="">Sala de conferencias, Mun. de Quinteros</a></li>
-        </ul>
         <div class="images__aside">
-            <img src="../images/cotizacion.png" alt="cotizacion">
+            <img src="../images/aside-servicios1.png" alt="servicios">
             <img src="../images/aside-servicios2.png" alt="marcas y servicios">
-        </div>
-        <h2 class="projectsAside__title">Conoce a nuestro equipo</h2>
-        <a class="projectsAside__imgEquipo" href="./conocenos.html"><img src="../images/equipo.png" alt="equipo de trabajo"></a>
-        <div>
-            <a class="servicesAside__contact" href="./contacto.html"><i class="fa-brands fa-whatsapp-square"></i>Contacto</a>
-        </div>
+            <button type="button" href="./contacto.html" class="btn btn-primary"><i class="fa-brands fa-whatsapp-square"></i>Contacto</button>
     </aside>
-    <footer class="footer__content">
-        <div>
-            <h4>Información de contacto</h4>
-            <br>
-            <p>Direccion: Calle Test. Chile</p>
-            <p>Telf: +534343536</p>
-            <p>Correo: asaf@gmail.com</p>
-        </div>
-        <div>
+    </div>
+    </div>  
+     <!-- inicio del footer -->
+     <footer class="container-fluid bg-dark text-white footerContent">
+        <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <h4>Información de contacto</h4>
+                <br>
+                <p>Direccion: Calle Test. Chile</p>
+                <p>Telf: +534343536</p>
+                <p>Correo: asaf@gmail.com</p>
+            </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
             <h4>Redes sociales</h4>
             <br>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-facebook-square"></i>
         </div>
-        <div>
-            <h4>Categorias principales</h4>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <h4>Información adicional</h4>
             <br>
-            <ul class="footer__content--links">
-                <li><a href="#">Cajas Activas</a></li>
-                <li><a href="#">Pianos y teclados</a></li>
-                <li><a href="#">Microfonos</a></li>
-                <li><a href="#">Mixer</a></li>
-            </ul>
+            <p>Instalacion</p>
+            <p>Asesoria</p>
+            <p>Proyectos</p>
         </div>
-        <div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
             <h4>Tiendas</h4>
             <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.12844982202!2d-70.62678941719712!3d-33.42934304789535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6ff096d887%3A0xc45df2bb50212e4e!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1658613779884!5m2!1ses-419!2scl" 
             width="250" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

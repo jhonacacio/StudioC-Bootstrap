@@ -88,7 +88,19 @@ p {
     --bs-btn-disabled-bg: #befe37;
     --bs-btn-disabled-border-color: #befe37;
   }
-
+/* Pagina de proyectos */
+.projectsCard{
+    background-color: #373737;
+    border-radius: 0 10px 10px 0px;
+    border: none;
+}
+.bg-dark{
+    border:none;
+}
+.btn.active{
+    color: #000;
+    background-color: #befe37;
+  }
 @media (min-width: 576px) {
 /* logo escritorio */
 .headerOne__logo, .imagenGray{
