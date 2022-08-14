@@ -10,5 +10,8 @@
 }
 .subBanner img{
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
+}
+.navbar-expand-lg{
+    padding: 10px 20px;
 }
